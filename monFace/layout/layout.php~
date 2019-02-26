@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+  <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>
+     Mon Face
+    </title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/<?php echo $action; ?>.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+      
+      
+      <div class="bandeau-notification">
+      <?php 
+        if(isset($_SESSION['user'])){
+      ?>
+          <h4>Bonjour <?php echo ($context->getSessionAttribute('user')['prenom'] ); ?></h4>
+          <button>Déconnexion</button>
+      <?php
+        }
+      ?>
+      <!-- Liste des action-->
+     <div class="action">
+     <!-- Action erreur -->
+    <?php
+      if ($context->error) {
+    ?>
+      <div class="error">
+        <strong>Erreur</strong> &nbsp; <?php echo $context->error; ?>
+      </div>
+
+    <?php
+    }
+    ?>
+      <!-- Action info-->
+      <?php
+        if ($context->info) {
+      ?>
+      <div class="info">
+      <strong>Info</strong> &nbsp; <?php echo $context->info; ?>
+      </div>
+      <?php
+        }
+      ?>
+     </div>
+      </div>
+      <?php include $template_view;?>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
+
+

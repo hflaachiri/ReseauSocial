@@ -1,0 +1,90 @@
+body{
+    background-color: #EDEDED;
+}
+.icon-bar {
+    width: 100%; 
+    overflow: auto; 
+}
+
+.icon-bar a {
+    float: left; 
+    text-align: center; 
+    width: 20%; 
+    transition: all 0.3s ease;
+    color: white; 
+    font-size: 20px; 
+}
+
+.icon-bar a:hover {
+    background-color: #BDBDBD;
+}
+
+.profile-header{
+    background-image:url("../images/couverture.png");
+    text-align: left;
+    height: 225px;
+}
+.avatar{
+    position: relative;
+    top : 150px;
+    width: 150px;
+    height: 150px;
+    padding: 6px;
+    margin-left: 110px;
+    background-color: #fff;
+    z-index: 10;
+}
+.profile-body{
+    padding-top: 90px;
+    background-color: #ffffff ;
+}
+.informations{
+    margin-top: 40px;
+}
+.links{
+    margin-top: 20px;
+}
+.chat{
+    margin-top: 20px;
+    padding-top: 5px;
+    padding: 0px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+.fenetre{
+    background-color: #EE4439 ;
+    color: #ffffff;
+    padding: 5px;
+    height: 40px;
+    width: 100%;
+}
+.chat-picture{
+    width: 40px;
+    height: 40px;
+}
+.chat-avatar{
+    width: 60px;
+    height: 60px;
+}
+.chat-message{
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: #fff;
+}
+
+.chat-messages{
+    background-color: #fff;
+    max-height: 40vh;
+    overflow-y: scroll;
+}
+.message-input{
+    overflow: hidden;
+    width: 80%;
+    max-height: 40px;
+}
+.btn-submit{
+    height: 40px;
+    background-color: #fff;
+    margin: 0px 10px;
+}

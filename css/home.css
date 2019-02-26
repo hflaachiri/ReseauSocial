@@ -1,0 +1,153 @@
+body{
+    background-color: #EDEDED;
+}
+.icon-bar {
+    width: 100%; 
+    overflow: auto; 
+}
+
+.icon-bar a {
+    float: left; 
+    text-align: center; 
+    width: 20%; 
+    transition: all 0.3s ease;
+    color: white; 
+    font-size: 20px; 
+}
+
+.icon-bar a:hover {
+    background-color: #BDBDBD;
+}
+
+.avatar{
+    position: relative;
+    top : 50px;
+    width: 100px;
+    height: 100px;
+    padding: 6px;
+    background-color: #fff;
+}
+.head{
+    border: 3cm;
+}
+.profile-header{
+    background-color: #EE4439;
+    text-align: center;
+}
+.profile-body{
+    padding-top: 60px;
+    background-color: #ffffff ;
+}
+.profile-name{
+    font-size: 24px ;
+}
+.friends{
+    padding-top: 20px;
+    background-color: #ffffff ;
+}
+.friend-picture{
+    width: 20px ;
+    height: 20px;
+}
+.list-friends{
+    max-height: 50vh;
+    overflow-y: scroll;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.add-post-home{
+    width: 100%;
+    background-color: #ffffff;
+    border-top: 5px solid #EE4439;
+    padding: 20px;
+}
+.add-post_home textarea{
+    width: 100%;
+}
+.post-picture{
+    width: 100%;
+    padding-bottom: 20px;
+}
+.post-icons{ 
+    color: #EE4439; 
+    font-size: 24px; 
+}
+.post-icon{
+    margin-right: 20px;
+}
+.post{
+    margin-top: 20px;
+    border-top: 5px solid #EE4439;
+}
+.fp-picture{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+.dt{
+    margin-top: 10px;
+    padding-left: 50px;
+}
+.comment{
+    margin-top: 20px;
+    border-top: 2px solid #EDEDED; 
+    padding-top: 10px;
+}
+.chat{
+    margin-top: 20px;
+    padding-top: 5px;
+    padding: 0px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+.fenetre{
+    background-color: #EE4439 ;
+    color: #ffffff;
+    padding: 5px;
+    height: 40px;
+    width: 100%;
+}
+.chat-picture{
+    width: 40px;
+    height: 40px;
+}
+.chat-avatar{
+    width: 60px;
+    height: 60px;
+}
+.chat-message{
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: #fff;
+}
+
+.chat-messages{
+    background-color: #fff;
+    max-height: 40vh;
+    overflow-y: scroll;
+}
+.message-input{
+    overflow: hidden;
+    width: 80%;
+    max-height: 40px;
+}
+.btn-submit{
+    height: 40px;
+    background-color: #fff;
+    margin: 0px 10px;
+}
+.item-color span{
+    color: black;
+}
+.item-color:hover{
+    text-decoration: none;
+    text-decoration: blink;
+}
+
+.chat-pic{
+    width: 3cm;
+    height : 2cm;
+}

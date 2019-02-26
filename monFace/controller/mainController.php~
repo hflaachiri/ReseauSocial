@@ -1,0 +1,65 @@
+<?php
+/*
+ * Controler 
+ */
+
+class mainController
+{
+
+	public static function helloWorld($request,$context)
+	{
+        if($context::getSessionAttribute('user')){
+		   $context->mavariable="hello world";
+           return context::SUCCESS;
+        }
+        else{
+            $context->error="vous n'etes pas connecter";
+            return context::ERROR;
+        }
+	}
+
+
+
+	public static function index($request,$context)
+	{
+		
+		return context::SUCCESS;
+	}
+
+   public static function superTest($request,$context)
+   {
+   	
+      $context->mavariable1=$_GET['param1'];
+      $context->mavariable2=$_GET['param2'];
+      return context::SUCCESS;
+   }
+   
+   public static function login($request,$context)
+   {
+       if(isset($request['userName']) && isset($request['password'])){
+        $user = utilisateurTable::getUserByLoginAndPass($request['userName'], $request['password']);
+        if($user != false){
+            $context->setSessionAttribute('user', $user[0]);
+        }
+        else{
+            $context->error= "Login ou mot de passe incorrect";
+        }
+       }
+      return context::SUCCESS;
+   }
+   
+   public static function afficher($request;$context)
+   {
+      if(isset($request['id'])){
+      	$user = utilisateurTable::getUserById($request['id']);
+      	if($user != false){
+      		$context->setSessionAttribute('user', $user[0]);
+      	}
+      	else{
+            $context->error= "Ce identifiant n'existe pas";
+        }
+      }
+      return context::SUCCESS;
+   }
+
+}

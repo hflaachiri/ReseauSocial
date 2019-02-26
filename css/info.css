@@ -1,0 +1,46 @@
+.icon-bar {
+    width: 100%; 
+    overflow: auto; 
+}
+
+.icon-bar a {
+    float: left; 
+    text-align: center; 
+    width: 20%; 
+    transition: all 0.3s ease;
+    color: white; 
+    font-size: 20px; 
+}
+
+.icon-bar a:hover {
+    background-color: #BDBDBD;
+}
+ body{
+    background-color: #EDEDED;
+}
+
+
+.footer{
+    padding: 20px 20px 10px;
+    border-top: 1px solid #666;
+    font-size:15px;
+    font-family:'Helvetica';
+    color:#EE4439;
+    background:rgba(0,0,0,0.2);
+    width:100%;
+    position: fixed;
+    bottom: 0px;
+    right: 0;
+    left : 0;
+}
+.main{
+    padding: 20px 20px 10px;
+    border-top: 1px solid #EE4439;
+}
+
+h5{
+    font-weight:400,normal;
+    color:#EE4439;
+    margin-top: 9px;
+    margin-bottom: 30px;
+}

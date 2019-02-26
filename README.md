@@ -1,2 +1,4 @@
-# ReseauSocial
-site dynamique avec PHP / PostgreSQL se basent sur un modèle MVC pour permettre aux utilisateurs de communiquer entre eux et de publier des postes
+# public_html
+Réaliser par : LAACHIRI Hafsa (uapv1900168)
+#### Lien pour tester :
+https://pedago02a.univ-avignon.fr/~uapv1900168/monFace.php?action=login
